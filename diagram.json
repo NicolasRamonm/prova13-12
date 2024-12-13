@@ -84,10 +84,10 @@
     [ "ldr1:GND", "esp:GND.1", "black", [ "h19.2", "v239.6", "h211.2", "v-48", "h43.48" ] ],
     [ "led2:A", "esp:2", "green", [ "v2.08", "h29.73", "v-163.2" ] ],
     [ "btn1:1.r", "esp:RST", "red", [ "v0", "h57.8", "v-28.8" ] ],
-    [ "r1:1", "esp:19", "black", [ "v0" ] ],
     [ "ldr1:DO", "esp:4", "orange", [ "h172.8", "v9" ] ],
     [ "r3:2", "esp:GND.1", "black", [ "v0" ] ],
-    [ "ldr1:VCC", "esp:5V", "red", [ "h0" ] ]
+    [ "ldr1:VCC", "esp:5V", "red", [ "h0" ] ],
+    [ "esp:GND.4", "r1:1", "black", [ "h42.97", "v-19.38" ] ]
   ],
   "dependencies": {}
 }
