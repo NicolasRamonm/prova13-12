@@ -111,7 +111,6 @@ void loop() {
     digitalWrite(led_yellow, HIGH);
     delay(1000); // Yellow on for 1 second
     digitalWrite(led_yellow, LOW);
-    delay(1000);
   }
 }
 
