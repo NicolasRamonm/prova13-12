@@ -1,24 +1,30 @@
-# Prova projeto ESP32
+# Prova
 
-**Código do Projeto Alterado**
+## 1. Descrição do Projeto
+Este projeto simula semáforos usando sensores de luz (LDR), que, durante condições de baixa luminosidade, o sistema entra em modo noturno.
+
+
+### 2: Programação
 ```
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-#define led_blue 9 // Pin used to control the blue LED
-#define led_green 41 // Pin used to control the green LED
+#define led_green 2 // Pin used to control the green LED
 #define led_red 40 // Pin used to control the red LED
-#define led_yellow 10 // Pin used to control the yellow LED
+#define led_yellow 9 // Pin used to control the yellow LED
 
 const int buttonPin = 18;  // Pin to which the button is connected
 int buttonState = 0;  // Variable to read the button state
+// int lastButtonState = LOW;
+
+// unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
+// unsigned long debounceDelay = 50;  
 
 const int ldrPin = 4;  // Pin to which the LDR is connected
 int limit = 600;
 
 void setup() {
   // Initial configuration of pins to control the LEDs as OUTPUTs of the ESP32
-  pinMode(led_blue, OUTPUT);
   pinMode(led_green, OUTPUT);
   pinMode(led_red, OUTPUT);
   pinMode(led_yellow, OUTPUT); // Added for the yellow LED
@@ -27,7 +33,6 @@ void setup() {
   pinMode(buttonPin, INPUT); // Initialize the button pin as an input
   pinMode(ldrPin, INPUT); // Initialize the LDR pin as an input
 
-  digitalWrite(led_blue, LOW);
   digitalWrite(led_green, LOW);
   digitalWrite(led_red, LOW);
   digitalWrite(led_yellow, LOW); // Added for the yellow LED
@@ -114,6 +119,29 @@ void loop() {
     digitalWrite(led_yellow, HIGH);
     delay(1000); // Yellow on for 1 second
     digitalWrite(led_yellow, LOW);
+    delay(1000);
   }
 }
+
+//Sources:
+//https://docs.arduino.cc/built-in-examples/digital/Debounce/
 ```
+## 3. Funcionamento
+
+
+<div align="center">
+<sub>Figura 1 - ESP 32 - Modo Convencional - Modo Diurno</sub>
+<img src="./assets/esp1.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 2 - ESP 32 - Led amarelo piscando - Modo Noturno</sub>
+<img src="./assets/esp2.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+NÃO CONSIGO TIRAR OS PRINTS, WOKWI CONECTA ESPORADICAMENTE.
+
+
+
