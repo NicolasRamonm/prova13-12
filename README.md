@@ -131,17 +131,18 @@ void loop() {
 
 <div align="center">
 <sub>Figura 1 - ESP 32 - Modo Convencional - Modo Diurno</sub>
-<img src="./assets/esp1.jpg" width="100%">
+<img src="./assets/image.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
 <sub>Figura 2 - ESP 32 - Led amarelo piscando - Modo Noturno</sub>
-<img src="./assets/esp2.jpg" width="100%">
+<img src="./assets/image2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-NÃO CONSIGO TIRAR OS PRINTS, WOKWI CONECTA ESPORADICAMENTE.
+NÃO CONSIGO TIRAR OS PRINTS, WOKWI CONECTA ESPORADICAMENTE. As duas imagens foram adicionadas com atraso se comparadas ao envio do formulário pois o WOKWI não conectava, serginho foi avisado sobre isso no momento da prova.
+
 
 
 
