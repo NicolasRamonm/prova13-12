@@ -131,13 +131,13 @@ void loop() {
 
 <div align="center">
 <sub>Figura 1 - ESP 32 - Modo Convencional - Modo Diurno</sub>
-<img src="./assets/image.png" width="100%">
+<img src="./image.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
 <sub>Figura 2 - ESP 32 - Led amarelo piscando - Modo Noturno</sub>
-<img src="./assets/image2.png" width="100%">
+<img src="./image2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
